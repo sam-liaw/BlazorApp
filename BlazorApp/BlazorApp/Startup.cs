@@ -45,7 +45,9 @@ namespace BlazorApp
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            // 移除後，project 模式不會再出現關閉 ssl 的提示了
+            //app.UseHttpsRedirection();
+
             app.UseStaticFiles();
 
             app.UseRouting();
